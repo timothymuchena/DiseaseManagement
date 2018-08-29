@@ -1,0 +1,57 @@
+<core:FragmentDefinition height="100%" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout" xmlns="sap.m">
+	<sap.ui.layout.form:SimpleForm adjustLabelSpan="true" columnsL="1" columnsM="1" columnsXL="2" editable="true" emptySpanL="4" emptySpanM="0"
+		emptySpanS="0" emptySpanXL="0" id="SocialHistoryForm" labelSpanL="3" labelSpanM="4" labelSpanS="12" labelSpanXL="4"
+		layout="ResponsiveGridLayout" singleContainerFullSize="true" xmlns:sap.ui.layout.form="sap.ui.layout.form">
+		<sap.ui.layout.form:content>
+			<Label required="true" text="{i18n>HIVStatus}"/>
+			<RadioButtonGroup columns="2" select="onTBQuestionnaire" selectedIndex="{HIVStatus}">
+				<buttons>
+					<RadioButton text="Positive"/>
+					<RadioButton text="Negative"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Smoke}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{Smoke}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Cage1}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{Cage1}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Cage2}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{Cage2}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Cage3}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{Cage3}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Cage4}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{Cage4}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Condoms}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{Condoms}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+		</sap.ui.layout.form:content>
+	</sap.ui.layout.form:SimpleForm>
+</core:FragmentDefinition>

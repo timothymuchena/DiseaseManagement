@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="com.disease.management.controller.Main" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form">
+	<sap.m.semantic:FullscreenPage xmlns:sap.m.semantic="sap.m.semantic" title="{i18n>appDescription}" id="__page1">
+		<sap.m.semantic:content>
+			<NavContainer id="navContainer">
+				<Wizard id="DiseaseManagementtWizard" complete="completedHandler">
+					<WizardStep id="ServiceStep" nextStep="ClinicalExamPhysicalStep" title="Select employee" icon="sap-icon://doctor">
+						<core:Fragment fragmentName="com.disease.management.view.fragment.employeeSearch" type="XML"/>
+					</WizardStep>
+					<WizardStep id="ClinicalExamPhysicalStep" title="Clinical Examination (Physical)" nextStep="MedicalHistoryStep"
+						icon="sap-icon://money-bills">
+						<core:Fragment fragmentName="com.disease.management.view.fragment.physicalClinicalExamCopy" type="XML"/>
+					</WizardStep>
+					<WizardStep id="MedicalHistoryStep" title="Medical History" nextStep="SocialHistoryStep" activate="checkCreditCardStep"
+						icon="sap-icon://clinical-tast-tracker">
+						<core:Fragment fragmentName="com.disease.management.view.fragment.medicalHistory" type="XML"/>
+					</WizardStep>
+					<WizardStep id="SocialHistoryStep" title="Social History" nextStep="ClinicalExamSceeningStep" icon="sap-icon://customer-history">
+						<core:Fragment fragmentName="com.disease.management.view.fragment.socialHistory" type="XML"/>
+					</WizardStep>
+					<WizardStep id="ClinicalExamSceeningStep" title="Clinical Examination (Screening)" nextStep="ClinicalExamLaboratoryStep"
+						activate="checkCashOnDeliveryStep" icon="sap-icon://clinical-order">
+						<core:Fragment fragmentName="com.disease.management.view.fragment.screeningClinicalExam" type="XML"/>
+					</WizardStep>
+				</Wizard>
+			</NavContainer>
+		</sap.m.semantic:content>
+		<sap.m.semantic:positiveAction>
+			<sap.m.semantic:PositiveAction text="Save" press="onSave"/>
+		</sap.m.semantic:positiveAction>
+	</sap.m.semantic:FullscreenPage>
+</mvc:View>

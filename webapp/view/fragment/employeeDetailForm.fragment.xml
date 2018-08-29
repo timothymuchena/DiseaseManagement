@@ -1,0 +1,127 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+	<!--<VBox class="sapUiSmallMargin">-->
+	<!--	<f:Form id="FormChange354wideDual"-->
+	<!--		editable="true">-->
+			<!--<f:title>-->
+			<!--	<core:Title text="Address" />-->
+			<!--</f:title>-->
+	<!--		<f:layout>-->
+	<!--			<f:ResponsiveGridLayout-->
+	<!--				labelSpanXL="4"-->
+	<!--				labelSpanL="3"-->
+	<!--				labelSpanM="4"-->
+	<!--				labelSpanS="12"-->
+	<!--				adjustLabelSpan="false"-->
+	<!--				emptySpanXL="0"-->
+	<!--				emptySpanL="4"-->
+	<!--				emptySpanM="0"-->
+	<!--				emptySpanS="0"-->
+	<!--				columnsXL="2"-->
+	<!--				columnsL="1"-->
+	<!--				columnsM="1"-->
+	<!--				singleContainerFullSize="false" />-->
+	<!--		</f:layout>-->
+	<!--		<f:formContainers>-->
+	<!--			<f:FormContainer title="Employee">-->
+	<!--				<f:formElements>-->
+	<!--					<f:FormElement label="Employee Name">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="{FirstName} {LastName}" id="name"/>-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+	<!--					<f:FormElement label="Employee Number">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="{EmployeeNumber}" />-->
+								<!--<Input value="{HouseNumber}">-->
+								<!--	<layoutData>-->
+								<!--		<l:GridData span="XL1 L2 M2 S4" />-->
+								<!--	</layoutData>-->
+								<!--</Input>-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+	<!--					<f:FormElement label="Directorate">-->
+	<!--						<f:fields>-->
+								<!--<Input value="{ZIPCode}">-->
+								<!--	<layoutData>-->
+								<!--		<l:GridData span="XL1 L2 M2 S4" />-->
+								<!--	</layoutData>-->
+								<!--</Input>-->
+	<!--							<Input value="{Directorate}" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+	<!--					<f:FormElement label="Department">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="{Department}" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+	<!--				</f:formElements>-->
+	<!--			</f:FormContainer>-->
+	<!--			<f:FormContainer title="Employee Contact Details">-->
+	<!--				<f:formElements>-->
+	<!--					<f:FormElement label="Phone">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="{Phone}" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+	<!--					<f:FormElement label="Cell">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="{Cell}" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+	<!--					<f:FormElement label="Email">-->
+	<!--						<f:fields>-->
+	<!--							<Input value="{Email}" />-->
+	<!--						</f:fields>-->
+	<!--					</f:FormElement>-->
+	<!--				</f:formElements>-->
+	<!--			</f:FormContainer>-->
+	<!--		</f:formContainers>-->
+	<!--	</f:Form>-->
+	<!--</VBox>-->
+	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="EmployeeDetailForm"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			
+			labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="12"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="2"
+			columnsM="2"
+			singleContainerFullSize="false" >
+			<f:content>
+				<core:Title text="Employee Details" />
+				<Label text="Employee Name" />
+				<Text text="{FirstName} {LastName}" />
+				<Label text="Employee Number" />
+				<Text id="EmployeeNumberTxtVal" text="{EmployeeNumber}" />
+				<Label text="Directorate" />
+				<Text text="{Directorate}" />
+				<Label text="Department" />
+				<Text text="{Department}" />
+				<Label text="Gender" />
+				<Text text="{Gender}" />
+				<Label text="Age Category" />
+				<Text text="{Age}" />
+				<core:Title text="Employee Contact Details" />
+				<Label text="Phone" />
+				<Text text="{Phone}" />
+				<Label text="Cell" />
+				<Text text="{Cell}" />
+				<Label text="Email" />
+				<Text text="{Email}" />
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+</core:FragmentDefinition>

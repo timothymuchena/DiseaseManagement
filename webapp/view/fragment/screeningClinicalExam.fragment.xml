@@ -1,0 +1,78 @@
+<core:FragmentDefinition height="100%" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout" xmlns="sap.m">
+	<form:SimpleForm adjustLabelSpan="true" columnsL="1" columnsM="1" columnsXL="2" editable="true" emptySpanL="4" emptySpanM="0"
+		emptySpanS="0" emptySpanXL="0" id="ScreeningClinicalExamForm" labelSpanL="3" labelSpanM="4" labelSpanS="12" labelSpanXL="4"
+		layout="ResponsiveGridLayout" singleContainerFullSize="true" xmlns:sap.ui.layout.form="sap.ui.layout.form">
+		<form:content>
+			<Label required="true" text="{i18n>TBScreening}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{TBScreening}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>HIVcreening}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{HIVcreening}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>PSAScreening}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{PSAScreening}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>STIScreening}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{STIScreening}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>PapSmear}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{PapSmear}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>CondomsAdmin}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{CondomsAdministration}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>FamilyPlanningAdmin}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{FamilyPlanningAdmin}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>BreastScreening}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{BreastScreening}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>INHProphalaxis}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{INHProphalaxis}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>EyeScreening}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{EyeScreening}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+		</form:content>
+	</form:SimpleForm>
+</core:FragmentDefinition>

@@ -1,0 +1,110 @@
+<core:FragmentDefinition height="100%" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout" xmlns="sap.m">
+	<sap.ui.layout.form:SimpleForm adjustLabelSpan="true" columnsL="1" columnsM="1" columnsXL="2" editable="true" emptySpanL="4" emptySpanM="0"
+		emptySpanS="0" emptySpanXL="0" id="MedicalHistoryForm" labelSpanL="3" labelSpanM="4" labelSpanS="12" labelSpanXL="4"
+		layout="ResponsiveGridLayout" singleContainerFullSize="true" xmlns:sap.ui.layout.form="sap.ui.layout.form">
+		<sap.ui.layout.form:content>
+			<Label required="true" text="{i18n>NumberOfPregnancies}"/>
+			<Input required="true" value="{NumberOfPregnancies}"/>
+			<Label required="false" text="{i18n>NumberOfChildren}" visible="{ViewModel>/isSignageRequired}"/>
+			<Input value="{NumberOfChildren}"/>
+			<Label required="true" text="{i18n>Family planning}"/>
+			<RadioButtonGroup columns="2" id="radioBtnGrpFamilyPlanning" selectedIndex="{FamilyPlanning}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>ChronicDisease}"/>
+			<RadioButtonGroup columns="2" select="onChronicDisease" selectedIndex="{ChronicDisease}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>TBQuestionnaire}"/>
+			<RadioButtonGroup columns="2" id="radioBtnGrpTBQuestionnaire" select="onTBQuestionnaire" selectedIndex="{TbQuestionnaireCompleted}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Cough}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{CoughGtTwoWeeks}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>NightSweat}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{NightSweats}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>LossOfAppetite}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{LossOfAppetite}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>LossOfWeight}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{LossOfWeight}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Fatigue}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{Fatigue}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>BloodCough}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{CoughingBlood}" visible="{ViewModel>/isTbQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>STIQuestionnaire}"/>
+			<RadioButtonGroup columns="2" id="radioBtnSTIQuestionnaire" visible="onSTIQuestionnaire" selectedIndex="{StiQuestionnaireCompleted}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>LowerAbdominalPain}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{LowerAbdominalPain}" visible="{ViewModel>/isStiQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>UrethralDischarge}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{UrethralDischarge}" visible="{ViewModel>/isStiQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>VaginalDischarge}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{VaginalDischarge}" enabled="{ViewModel>/isStiQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>GenitalAnalWarts}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{GenitalAnalWarts}" enabled="{ViewModel>/isStiQsVisible}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+		</sap.ui.layout.form:content>
+	</sap.ui.layout.form:SimpleForm>
+</core:FragmentDefinition>

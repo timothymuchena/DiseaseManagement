@@ -1,0 +1,35 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<!--items="{ path: '/EmployeeSet', sorter: { path: 'LastName' }, filters: [ {path: 'EmployeeNumber', operator: 'EQ' value1: '{ViewModel:>/EmployeeNumber}'} ] }"-->
+	<Table id="idEmployeeTable" width="70%" class="sapUiMediumMarginBottom sapUiMediumMarginBegin" itemPress="onPressEmployee"
+		selectionChange="onSelectionChange" mode="SingleSelect">
+		<headerToolbar>
+			<Toolbar>
+				<content>
+					<SearchField width="50%" placeholder="Search by employee number" search="onSearchByEmployeeNumber"/>
+					<SearchField width="50%" placeholder="Search by employee name" search="onSearchByEmployeeName"/>
+				</content>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column width="12em">
+				<Text text="Employee number"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true">
+				<Text text="Last name"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true">
+				<Text text="First name"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Active">
+				<!--<cells>-->
+				<!--	<ObjectIdentifier title="{EmployeeNumber}"/>-->
+				<!--	<Text text="{LastName}"/>-->
+				<!--	<Text text="{FirstName}"/>-->
+				<!--</cells>-->
+			</ColumnListItem>
+		</items>
+	</Table>
+	<core:Fragment fragmentName="com.disease.management.view.fragment.employeeDetailForm" type="XML"/>
+</core:FragmentDefinition>

@@ -1,0 +1,106 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<!--<VBox id="vBoxPhysicalClinical" class="sapUiSmallMargin">-->
+	<f:SimpleForm id="PhysicalClinicalExamForm" editable="false" columnsL="1" columnsM="1" emptySpanL="1" emptySpanM="1" labelSpanL="6"
+		labelSpanM="2">
+		<f:content>
+			<core:Title text=""/>
+			<Label text="Weight" class="sapUiTinyMarginTop"/>
+			<Input value="{Weight}" width="25%"/>
+			<Label text="Length" class="sapUiTinyMarginTop"/>
+			<Input value="{Length}" width="25%"/>
+			<Label text="BMI" class="sapUiTinyMarginTop"/>
+			<Input value="{BMI}" width="25%"/>
+			<Label text="Blood Pressure" class="sapUiTinyMarginTop"/>
+			<Input value="{BloodPressure}" width="25%"/>
+			<Label text="Blood Glucose" class="sapUiTinyMarginTop"/>
+			<Input value="{BloodGlucose}" width="25%"/>
+			<Label text="Heart Rate" class="sapUiTinyMarginTop"/>
+			<Input value="{HeartRate}" width="25%"/>
+			<Label text="Body Temperature" class="sapUiTinyMarginTop"/>
+			<Input value="{BodyTemperature}" width="25%"/>
+			<Label text="RespiratoryRate" class="sapUiTinyMarginTop"/>
+			<Input value="{RespiratoryRate}" width="25%"/>
+			<Label text="Pregnancy Test" class="sapUiTinyMarginTop"/>
+			<Input value="{PregnancyTest}" width="25%"/>
+			<Label text="Urine Dipstick" class="sapUiTinyMarginTop"/>
+			<Input value="{UrineDipStick}" width="25%"/>
+			<Label text="Finger Prick HB" class="sapUiTinyMarginTop"/>
+			<Input value="{FingerPrickHB}" width="25%"/>
+			<!--<Title text="Substance Tests"></Title>-->
+			<Label text="Other Tests" class="sapUiTinyMarginTop"/>
+			<Input value="{OtherSubstanceTest}"/>
+			<core:Title text="Have you taken the following substance tests?" class="sapUiTinyMarginTop"/>
+			<Label text="Mandrax" class="sapUiTinyMarginTop"/>
+			<RadioButtonGroup columns="2" selectedIndex="{MandraxTest}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label id="lblOpiodsTest" text="Opioids" class="sapUiTinyMarginTop"/>
+			<RadioButtonGroup id="rbgOpiodsTest" columns="2" selectedIndex="{OpiodsTest}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label text="Hallucinogens" class="sapUiTinyMarginTop"/>
+			<RadioButtonGroup columns="2" selectedIndex="{HallucinogensTest}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label text="Sedatives" class="sapUiTinyMarginTop"/>
+			<RadioButtonGroup columns="2" selectedIndex="{SedativesTest}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label text="Inhalants" class="sapUiTinyMarginTop"/>
+			<RadioButtonGroup columns="2" selectedIndex="{InhalantsTest}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label text="Amphetamine type stimulants" class="sapUiTinyMarginTop"/>
+			<RadioButtonGroup columns="2" selectedIndex="{AmphetamineTest}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label text="Cocaine" class="sapUiTinyMarginTop"/>
+			<RadioButtonGroup columns="2" selectedIndex="{CocaineTest}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label text="Marijuana" class="sapUiTinyMarginTop"/>
+			<RadioButtonGroup columns="2" selectedIndex="{MarijuanaTest}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label text="Alcoholic beverages" class="sapUiTinyMarginTop"/>
+			<RadioButtonGroup columns="2" selectedIndex="{AlcoholicTest}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label text="Tobacco Products" class="sapUiTinyMarginTop"/>
+			<RadioButtonGroup columns="2" selectedIndex="{TobaccoTest}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+		</f:content>
+	</f:SimpleForm>
+	<!--</VBox>-->
+</core:FragmentDefinition>

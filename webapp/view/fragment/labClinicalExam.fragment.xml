@@ -1,0 +1,120 @@
+<core:FragmentDefinition height="100%" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout" xmlns="sap.m">
+	<form:SimpleForm adjustLabelSpan="true" columnsL="1" columnsM="1" columnsXL="2" editable="true" emptySpanL="4" emptySpanM="0" emptySpanS="0"
+		emptySpanXL="0" id="FormLabClinicalExam" labelSpanL="3" labelSpanM="4" labelSpanS="12" labelSpanXL="4" layout="ResponsiveGridLayout"
+		singleContainerFullSize="true" xmlns:sap.ui.layout.form="sap.ui.layout.form">
+		<form:content>
+			<Label required="true" text="{i18n>HIVElisa}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{HIVElisa}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>TBResult}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{TBResult}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>RPPTPHA}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{RppTpha}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>PapSmear}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{PapSmear}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Creatinine}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{Creatinine}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>CreatinineClearance}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{CreatinineClearance}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>HB}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{HB}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>ALT}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{ALT}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Cholesterol}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{Cholesterol}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>Triglicerides}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{Triglicerides}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>HbA1C}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{HbA1C}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>FBC}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{FBC}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>HepatitisBSag}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{HepatitisBSag}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>HepatitisBAntiBody}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{HepatitisBAntiBody}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>HepatitisC}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{HepatitisC}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+			<Label required="true" text="{i18n>PSA}"/>
+			<RadioButtonGroup columns="2" selectedIndex="{PSA}">
+				<buttons>
+					<RadioButton text="Yes"/>
+					<RadioButton text="No"/>
+				</buttons>
+			</RadioButtonGroup>
+		</form:content>
+	</form:SimpleForm>
+</core:FragmentDefinition>
